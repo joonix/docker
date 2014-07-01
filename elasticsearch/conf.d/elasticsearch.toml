@@ -1,0 +1,10 @@
+[template]
+src   = "elasticsearch.yml.tmpl"
+dest  = "/elasticsearch/config/elasticsearch.yml"
+owner = "root"
+group = "root"
+mode  = "0644"
+keys = [
+  "/elasticsearch",
+  "/services/elasticsearch",
+]

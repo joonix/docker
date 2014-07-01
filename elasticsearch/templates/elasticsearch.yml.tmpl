@@ -1,0 +1,12 @@
+{{ if .services_elasticsearch_node1 }}
+discovery.zen.ping.unicast.hosts: {{ .services_elasticsearch_node1 }}
+{{ end }}
+
+cluster:
+  name: {{ .elasticsearch_name }}
+
+path:
+  plugins: /data/plugins
+  data: /data
+  work: /data/tmp
+  logs: /data/logs

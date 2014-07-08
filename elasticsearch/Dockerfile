@@ -12,7 +12,7 @@ RUN \
 # Setup configuration from etcd
 RUN \
   wget https://github.com/kelseyhightower/confd/releases/download/v0.2.0/confd_0.2.0_linux_amd64.tar.gz && \
-  tar xzvf confd_0.2.0_linux_amd64.tar.gz && \
+  tar xzf confd_0.2.0_linux_amd64.tar.gz && \
   rm -f confd_0.2.0_linux_amd64.tar.gz && \
   mv confd /usr/local/bin/confd
 
